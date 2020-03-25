@@ -1,5 +1,68 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
+.align-container{
+  text-align: center;
+}
+.text-align {
+  width: 90px;
+  background-color: #e6f2ff;
+  padding: 10px 0;
+  display: inline-block;
+}
+.margin {
+  width: 90px;
+  background-color: #e6f2ff;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.table-box {
+  display: table;
+}
+.table-container {
+  display: table-cell;
+  /* vertical-alignで中央寄せ */
+  vertical-align: middle;
+  text-align: center;
+}
+.table {
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+.flex-box {
+  display: flex;
+  /* justify-content: center;で中央寄せ */
+  justify-content: center;
+  /* align-itemsで垂直方向の調整 */
+  align-items: center;
+}
+.flex {
+  background-color: #fff;
+  padding: 10px;
+}
+.stable-box {
+  position: relative;
+}
+.stable-position {
+  position: absolute;
+  /* postion:absoluteでの固定の中央寄せ */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+.flexible-box {
+  position: relative;
+}
+.flexible-position {
+  position: absolute;
+  /* position:absolute;での可変の中央寄せ */
+  top: 50%;
+  left: 50%;
+  /* xとy-50%移動 */
+  transform: translate(-50%,-50%);
+}
 /* 回答はここに書いてね */
