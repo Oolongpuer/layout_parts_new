@@ -4,13 +4,14 @@
 .q3_contents {
   width: 100%;
   border: 1px solid #dedede;
+  table-layout: fixed;
 }
 .q3_contents th {
   color: #fff;
   background-color: #2244aa;
   padding: 10px;
   border: 1px solid #dedede;
-  line-height: 24px;
+  line-height: 26px;
   font-size: 18px;
 }
 .q3_contents td {
@@ -18,10 +19,11 @@
   border: 1px solid #dedede;
   padding: 10px; 
 }
-.q3_contents tr:nth-child(odd){
+
+.q3_contents tr:nth-child(even){
   background-color: #ecf1f2;
 }
-.q3_contents tr:last-child {
+.q3_contents tbody tr:last-child {
   border-top: dashed #000 2px;
 }
 /* 回答はここに書いてね */

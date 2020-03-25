@@ -18,6 +18,7 @@
   display: table-cell;
   padding: 20px;
   text-align: center;
+  box-sizing: border-box;
 }
 .beige {
   width: 100px;
