@@ -12,29 +12,20 @@
   border: 5px solid #222; 
 }
 /* 黒い三角 */
-.bln::before {
+.bln::before,.bln::after{
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
   border: 20px solid transparent;
   content: "";
-  bottom: -45px;
   left: 30px;
+}
+/* 纏める */
+.bln::before {
+  bottom: -45px;
   border-top-color: #222;
 }
 /* 白い三角 */
 .bln::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border: 20px solid transparent;
-  content: ""; 
   bottom: -38px;
-  left: 30px;
   border-top-color: #fff;
 }
 /* 回答はここに書いてね */
