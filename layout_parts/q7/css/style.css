@@ -1,5 +1,71 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.float-text-box:first-child {
+  margin-left: 0;
+}
+.float-text-box {
+  float: left;
+  font-size: 16px;
+  margin-left: 50px;
+  width: 225px;
+  box-sizing: border-box;
+}
+/* display:table; display:table-cell; で横並び */
+.table-contents {
+  display: table;
+}
+.table-box:first-child {
+  padding-left: 0;
+}
+.table-box {
+  display: table-cell;
+  padding-left: 50px;
+  width: 225px;
+  vertical-align: middle;
+}
+.inlineblock-contents {
+  /* 親要素にfontーsize:0をかけると隙間がなくなる */
+  font-size: 0;
+}
+.inlineblock-box:first-child {
+  margin-left: 0;
+}
+.inlineblock-box {
+  display: inline-block;
+  width: 225px;
+  margin-left: 50px;
+  font-size: 16px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.flex-contents {
+  display: flex;
+  /*justify-contentは水平方向を揃える  均等に間隔を開ける */
+  justify-content: space-around;
+  /*align-itemsは垂直方向の調整 flex-endは下揃え  */
+  align-items: flex-end;
+}
+.flex-box {
+  width: 225px;
+  box-sizing: border-box;
+}
+.stable-contents {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
 
+.flexible-contents{
+  display: inline-block;
+  width: 100%;
+  margin-left: -300px;
+  padding-left: 350px;
+  box-sizing: border-box;
+}
 /* 回答はここに書いてね */
